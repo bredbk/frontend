@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Valor do depósito</mat-card-title>
+    <form>
+        
+         
+        
+        <mat-form-field>
+            <input matInput placeholder="Saldo em Conta" [(ngModel)]="client.account" name="account">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Saldo em Conta" [(ngModel)]="client.balance" name="balance">
+        </mat-form-field>
+
+        <button mat-raised-button  color="primary">
+            Salvar
+        </button>
+
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+    </form>
+</mat-card>
